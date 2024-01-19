@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube/live-Chat</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container
+    {
+        background-color: rgb(227, 239, 250);
+        height: 70vh;
+        width: 40%;
+        margin: 1% 25%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 1%;
+    }
+    .container .top
+    {
+        background-color: aliceblue;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+    .container .top p
+    {
+        font-size: 2vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+    }
+    .chatbox
+    {
+        height: 70%;
+        width: 100%;
+        background-color: rgb(229, 252, 252);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .inputbox
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    #inputchat
+   {
+background-color: antiquewhite;
+border: none;
+height: 10vh;
+width: 30vw;
+   }
+   #submit
+   {
+    height: 10vh;
+width: 7vw;
+background-color: rgba(0, 0, 0, 0.777);
+color: white;
+font-weight: 2vw;
+box-shadow: 2px 2px 20px grey;
+   }
+   #h3
+   {
+    height: 5vh;
+    background-color:white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+   }
+   #username
+   {
+    margin:1% 30%;
+    padding: 15px;
+    color: white;
+    background-color:black;
+    font-size: 1.5vw;
+    border: none;
+   } 
+  
+</style>
+<body>
+   
+        <input type="text" id="username" placeholder="Enter your username">
+    </div>
+    <div class="container">
+        <div class="top">
+<p>live-Chat<i class="ri-arrow-drop-down-line"></i></p>
+<h1><i class="ri-tornado-line"></i></h1>
+
+        </div>
+        <div class="chatbox">
+          <h3 id="h3"></h3>
+          
+                
+        </div>
+        <div class="inputbox">
+            <form action="" id="usercoment">
+            <input type="text" name="chatbox" placeholder="Chat here.." id="inputchat">
+        
+            <button type="submit" id="submit">Submit Comment</button>
+        </div>
+    </div>
+    <script src="ytlive.js"></script>
+</body>
+</html>
